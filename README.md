@@ -86,3 +86,26 @@ import draw #draw為draw.py檔裡面內含許多函式 ex:drawfun
 draw.drawfun(參數)
 
 ```
+* ***匯入在其他套件裡的模組***  
+上述所提都是以匯入與被匯入模組都在同一目錄下，但專案常會依不同功能建立不同的套件目錄，例如:  
+```
+project/
+   packageA/
+      __init__.py
+      modA.py
+      ...
+   packageB/
+      __init__.py
+      modB.py
+      ...
+ ```
+* 專案 (Project) 根目錄： project/  
+✶ 套件 (Package) 目錄：packageA/, packageB/, ...，因為這些目錄裡都有 __init__.py 檔案 (內容可以是空的)，因此 Python 認定為套件，允許匯入模組  
+✶ 模組 (Module)：__init__.py, modA.py, modB.py, ...  
+ex:
+```
+from packageA import modA
+modA.drawfun(...)
+...
+```
+可嘗試在 if __name__ == '__main__': 指令前加上一行 print(__name__)，分別觀察執行或匯入模組的 __name__值->來確定程式是被匯入還是被執行，如果是被執行就呼叫 main() 函式，否則就不呼叫  
