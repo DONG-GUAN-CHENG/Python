@@ -78,8 +78,11 @@ main()  #呼叫
 
 * ***支援程式匯入而不立即執行***  
 我們所寫的函式，也可以提供其他人匯入使用。先匯入不立即執行，需要時再呼叫，如同匯入模組一樣  
+
+呼叫語法為``<ModuleName>.<functionName>``或``<ModuleName>.<VariableName>``。匯入模組只需寫主檔名，不需加入副檔名``.py``
 ```
-```
-import draw #draw為draw.py檔裡面內含許多函式
-```
+import draw #draw為draw.py檔裡面內含許多函式 ex:drawfun
+
+draw.drawfun(參數)
+
 ```
