@@ -37,5 +37,14 @@ def fun(a,b,c=3):
     fun(1,2)
 ```
 
+* ***函式的回覆值與執行流程***  
 
-   
+```
+def <function_name>(parameters):  
+    <body>   #記住本體要縮排
+    return <value> #return後可接一個或多個值或表示式
+```
+ps:函式定義必須要再呼叫函式之前，不然會出現錯誤。且如沒有寫明回覆值(return)，那麼預設回覆值就是``None``  
+
+
+
