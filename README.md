@@ -233,8 +233,8 @@ from mdu import var as v, fun ad f
 以類別建立實體物件
 class 類別名稱:  
 #定義初始化函式
-def __init__(self): 
-透過操作self來定義實體屬性
+    def __init__(self): 
+        透過操作self來定義實體屬性
 #以類別建立實體物件，放入變數obj中
 obj=類別名稱() #呼叫初始化函式
 ```
