@@ -239,6 +239,7 @@ def __init__(self):
 obj=類別名稱() #呼叫初始化函式
 ```
 ```
+ex:
 class Point:
     def __init__(self,x,y):
         self.x=x
@@ -249,7 +250,10 @@ p=Point(1,5)
 ```
 ```
 使用實體屬性
-
+#建立實體物件，並取得實體屬性
+p=Point(1,5)
+print(p.x+p.y)
+```
 
 
 
