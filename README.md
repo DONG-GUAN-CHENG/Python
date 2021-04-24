@@ -272,5 +272,16 @@ obj=類別名稱() #呼叫初始化函式
 #建立實體物件，並取得實體方法/函式
 實體物件.實體方法名稱(參數資料)
 ```
+```
+ex:
+class Point:
+    def __init__(self,x,y):
+        self.x=x
+        self.y=y
+    def show(self):
+        print(self.x,self.y)
+p=Point() #建立實體物件
+p.show() #呼叫實體方法
+```
 
 
