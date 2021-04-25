@@ -197,7 +197,7 @@ OR
 import 封包名稱.模組名稱 as 模組別名
 ```
 
-* ***物件 (object)與類別(class)***  
+* ***物件導向程式設計(object-oriented programming, OOP)以及物件 (object)與類別(class)***  
 1. 物件就是由類別產生的，可以把類別想成就像是物件的設計藍圖。同一類別所產生的物件都具有相同的屬性和操作方法，但相同類別的不同物件其屬性值可能不一樣  
 2. 類別規劃了物件的資料儲存的方式，這些儲存的資料就稱為物件的屬性 (attribute) 
 3. 類別規劃了物件的操作方式，這些操作方式就稱為物件的方法 (method)  
@@ -231,8 +231,8 @@ from mdu import var as v, fun ad f
 基本語法:  
 ```
 以類別建立實體物件
-class 類別名稱:  
-#定義初始化函式
+class 類別名稱(單字字首大寫):  
+#定義初始化函式(建構式 constructor)
     def __init__(self): 
         透過操作self來定義實體屬性
 #以類別建立實體物件，放入變數obj中
@@ -240,10 +240,12 @@ obj=類別名稱() #呼叫初始化函式
 ```
 ```
 ex:
+#類別建立
 class Point:
+    #建構式建立
     def __init__(self,x,y):
-        self.x=x
-        self.y=y
+        self.x=x #屬性
+        self.y=y #屬性
 #建立實體物件
 #建立時，可直接傳入參數資料
 p=Point(1,5)
@@ -282,6 +284,12 @@ class Point:
         print(self.x,self.y)
 p=Point() #建立實體物件
 p.show() #呼叫實體方法
+```
+-----------------------------
+* ***其它用法***  
+可利用``isinstance()``來判斷類別與物件的關係  
+```
+isinstance(object_name, class_name) -> 假如該物件屬於該類別則執行結果為True，否則為False
 ```
 
 
