@@ -204,13 +204,13 @@ import 封包名稱.模組名稱
 OR
 import 封包名稱.模組名稱 as 模組別名
 ```
-* ***應用模組***
+* ***應用模組***  
 ```隨機random模組```  
 1. randint()->可隨機產生指定區間的整數 2. choice()->可在一個列表(list)中隨機傳回一個元素 3. shuffle()->可將list元素重新排列  #使用方式random.randint(min, max)...  
 ```時間time模組```  
 1. time()->傳回自1970年1月1日 00:00:00AM以來的秒數 2. sleep()->可以讓工作暫停，參數單位為秒，常用於設計動畫 3. asctime()->以可以閱讀方式列出目前系統時間 4. localtime()->可返回目前時間的結構資料，所返回的結構可以用索引方式獲得個別內容  
 ```系統sys模組```  
-1. version屬性->列出目前所使用python版本訊息 2. stdin此物件，可以搭配readline()方法，可以讀取螢幕輸入直到按下鍵盤enter的字串 3. stdout此物件，可以搭配write()方法，然後可以從螢幕輸出資料 
+1. version屬性->列出目前所使用python版本訊息 2. stdin此物件，可以搭配readline()方法，可以讀取螢幕輸入直到按下鍵盤enter的字串 3. stdout此物件，可以搭配write()方法，然後可以從螢幕輸出資料   
 ```keyword模組```  
 1. kwlist屬性->可列出所有python關鍵字 2. iskeyword()->可利用此方法傳回參數的字串是否是關鍵字，如是傳回true，如否傳回false  
 
