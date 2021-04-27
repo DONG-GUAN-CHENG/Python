@@ -309,5 +309,8 @@ p.show() #呼叫實體方法
 ```
 isinstance(object_name, class_name) -> 假如該物件屬於該類別則執行結果為True，否則為False
 ```
-
-
+#### ***檔案的讀取與寫入***  
+* ***絕對路徑與相對路徑***  
+1. 絕對路徑->路徑從根目錄開始表示  
+    ex:D:\Python\ch14\ch14_1.py  
+2. 
